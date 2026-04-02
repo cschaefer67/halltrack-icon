@@ -1,9 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>HallTrack</title>
-  </head>
-  <body style="display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#1e4fa3;">
-    <img src="icon.png" style="width:180px;height:180px;border-radius:40px;">
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>HallTrack</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="HallTrack">
+  <meta name="theme-color" content="#1e4fa3">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon.png">
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #1e4fa3;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 18px;
+      text-align: center;
+      padding: 24px;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin: 0;
+      opacity: 0.9;
+      max-width: 320px;
+      line-height: 1.4;
+    }
+
+    .open-btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 14px;
+      background: white;
+      color: #1e4fa3;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+
+  <script>
+    const appUrl = "https://script.google.com/a/macros/friendshipschools.com/s/AKfycbyZBCsscXZOfmA5jkjsAJW5AYB9WZ3b3HRaRsvtAtYPypH67otmPSx6OMYVv9bOLBlEMQ/exec";
+
+    window.addEventListener("load", function () {
+      if (window.navigator.standalone) {
+        setTimeout(function () {
+          window.location.replace(appUrl);
+        }, 400);
+      }
+    });
+  </script>
+</head>
+<body>
+  <img src="icon.png" alt="HallTrack icon">
+  <h1>HallTrack</h1>
+  <p>Add this page to your Home Screen. When opened from the icon, it will launch HallTrack automatically.</p>
+  <a class="open-btn" href="https://script.google.com/a/macros/friendshipschools.com/s/AKfycbyZBCsscXZOfmA5jkjsAJW5AYB9WZ3b3HRaRsvtAtYPypH67otmPSx6OMYVv9bOLBlEMQ/exec">Open HallTrack</a>
+</body>
 </html>
